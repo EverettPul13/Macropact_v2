@@ -279,3 +279,41 @@ KC.unicode_string_sequence("✨🎉")    // Send Unicode/emoji directly (auto-co
 KC.unicode_codepoint_sequence(['1f600'])    // Send Unicode by hex codepoint value
 KC.compile_unicode_string_sequences({})    // Pre-compile dictionary of Unicode strings into macros
 KC.generate_leader_dictionary_seq("abc")    // Convert string into key sequences for LEADER key
+
+FRC Programming Macros
+----------
+KC.LCTL(KC.LALT(KC.B)),  	// Build
+KC.LCTL(KC.LALT(KC.D)),  	// Deploy
+KC.LCTL(KC.LALT(KC.S)),  	// Simulate
+KC.LCTL(KC.LALT(KC.G)), 	// Debug
+KC.LCTL(KC.LALT(KC.R)),  	// Start RioLog
+KC.LCTL(KC.LALT(KC.P)),  	// Open Driver Station
+KC.LCTL(KC.LALT(KC.T)),  	// Terminal
+KC.LCTL(KC.LALT(KC.E)),  	// Save All Files
+KC.LCTL(KC.LALT(KC.M)),  	// Start Shuffleboard
+KC.LCTL(KC.LALT(KC.F)),  	// Git Pull
+KC.LCTL(KC.LALT(KC.H)),  	// Git Push
+KC.LCTL(KC.LALT(KC.C)),  	// Commit
+KC.LCTL(KC.LALT(KC.W)),  	// File Browser
+KC.LCTL(KC.LALT(KC.L))		// Camera stream / Limelight
+KC.LCTL(KC.LALT(KC.T))		// Test Robot Code
+KC.LCTL(KC.LALT(KC.Q))		// Stop Robot Code
+
+Limelight Macros [when you press the key that has the IP adress assigned to it, open the browser and press the key to instantly paste it into the browser]
+----------------
+KC.send_string("10.51.99.11:5801")	// Left Limelight
+KC.send_string("10.51.99.12:5801")	// Front Limelight
+KC.send_string("10.51.99.13:5801")	// Right Limelight
+
+
+Driver Station Macros
+---------------------
+KC.LCTL(KC.LALT(KC.E))		// Enable
+KC.LCTL(KC.LALT(KC.D))		// Disable
+KC.LCTL(KC.LALT(KC.T))		// Switch Mode: Teleop
+KC.LCTL(KC.LALT(KC.A))		// Switch Mode: Auto
+KC.LCTL(KC.LALT(KC.S))		// Switch Mode: Test
+KC.LCTL(KC.LALT(KC.Q))		// E-Stop
+KC.LCTL(KC.LALT(KC.R))		// Start DS data logging
+KC.LCTL(KC.LALT(KC.X))		// Stop DS data logging
+KC.LCTL(KC.LALT(KC.L))		// Dashboard Refresh
