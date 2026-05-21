@@ -1,0 +1,281 @@
+KMK Keycodes (KC) Reference
+This file lists all available keycodes in the KC namespace for easy reference
+ 
+THE COMMENT WITH A # NEXT TO IT ARE OTHER WAYS THAT THAT COMMAND CAN BE WRITTEN
+anything with a // before it is a description of what that command does 
+
+Modifiers
+------------
+KC.LEFT_CONTROL  # LCTRL, LCTL    // Left Ctrl key
+KC.LEFT_SHIFT    # LSHIFT, LSFT    // Left Shift key
+KC.LEFT_ALT      # LALT    // Left Alt key
+KC.LEFT_SUPER    # LGUI, LCMD, LWIN    // Left Super/Windows/Command key
+KC.RIGHT_CONTROL # RCTRL, RCTL    // Right Ctrl key
+KC.RIGHT_SHIFT   # RSHIFT, RSFT    // Right Shift key
+KC.RIGHT_ALT     # RALT    // Right Alt key
+KC.RIGHT_SUPER   # RGUI, RCMD, RWIN    // Right Super/Windows/Command key
+KC.MEH           # LCTL + LALT + LSFT    // Left Ctrl + Alt + Shift combination
+KC.HYPER         # LCTL + LALT + LSFT + LGUI, HYPR    // Left Ctrl + Alt + Shift + Super combination
+
+Letters (A-Z)
+---------------
+KC.A    // Letter A key
+KC.B    // Letter B key
+KC.C    // Letter C key
+KC.D    // Letter D key
+KC.E    // Letter E key
+KC.F    // Letter F key
+KC.G    // Letter G key
+KC.H    // Letter H key
+KC.I    // Letter I key
+KC.J    // Letter J key
+KC.K    // Letter K key
+KC.L    // Letter L key
+KC.M    // Letter M key
+KC.N    // Letter N key
+KC.O    // Letter O key
+KC.P    // Letter P key
+KC.Q    // Letter Q key
+KC.R    // Letter R key
+KC.S    // Letter S key
+KC.T    // Letter T key
+KC.U    // Letter U key
+KC.V    // Letter V key
+KC.W    // Letter W key
+KC.X    // Letter X key
+KC.Y    // Letter Y key
+KC.Z    // Letter Z key
+
+Numbers (1-0)
+-------------
+# Also accessible as KC.1, KC.2, etc.
+KC.N1    // Number 1 key
+KC.N2    // Number 2 key
+KC.N3    // Number 3 key
+KC.N4    // Number 4 key
+KC.N5    // Number 5 key
+KC.N6    // Number 6 key
+KC.N7    // Number 7 key
+KC.N8    // Number 8 key
+KC.N9    // Number 9 key
+KC.N0    // Number 0 key 
+
+Basic Keys
+------------
+KC.ENTER         # ENT, \n            // Return/Enter key
+KC.ESCAPE        # ESC                // Escape key
+KC.BACKSPACE     # BSPC, BKSP         // Backspace key
+KC.TAB           # \t                 // Tab key
+KC.SPACE         # SPC, ' '           // Space bar
+KC.MINUS         # MINS, -            // Minus/Hyphen key
+KC.EQUAL         # EQL, =             // Equal/Plus key
+KC.LBRACKET      # LBRC, [            // Left bracket key
+KC.RBRACKET      # RBRC, ]            // Right bracket key
+KC.BACKSLASH     # BSLASH, BSLS, \    // Backslash key
+KC.SEMICOLON     # SCOLON, SCLN, ;    // Semicolon key
+KC.QUOTE         # QUOT, '            // Single quote key
+KC.GRAVE         # GRV, ZKHK, `       // Backtick/Grave key
+KC.COMMA         # COMM, ,            // Comma key
+KC.DOT           # .                  // Period/Dot key
+KC.SLASH         # SLSH               // Forward slash key
+
+Function Keys
+-------------
+KC.F1     // Function key 1
+KC.F2     // Function key 2
+KC.F3     // Function key 3
+KC.F4     // Function key 4
+KC.F5     // Function key 5
+KC.F6     // Function key 6
+KC.F7     // Function key 7
+KC.F8     // Function key 8
+KC.F9     // Function key 9
+KC.F10    // Function key 10
+KC.F11    // Function key 11
+KC.F12    // Function key 12
+KC.F13    // Function key 13
+KC.F14    // Function key 14
+KC.F15    // Function key 15
+KC.F16    // Function key 16
+KC.F17    // Function key 17
+KC.F18    // Function key 18
+KC.F19    // Function key 19
+KC.F20    // Function key 20
+KC.F21    // Function key 21
+KC.F22    // Function key 22
+KC.F23    // Function key 23
+KC.F24    // Function key 24
+
+Lock Keys & Navigation
+----------------------
+KC.CAPS_LOCK     # CAPSLOCK, CLCK, CAPS    // Caps Lock toggle
+KC.PRINT_SCREEN  # PSCREEN, PSCR           // Print Screen key
+KC.SCROLL_LOCK   # SCROLLLOCK, SLCK        // Scroll Lock toggle
+KC.PAUSE         # PAUS, BRK               // Pause/Break key
+KC.INSERT        # INS      // Insert key
+KC.HOME                     // Home key (move to start of line/document)
+KC.PGUP                     // Page Up key
+KC.DELETE        # DEL      // Delete key
+KC.END                      // End key (move to end of line/document)
+KC.PGDOWN        # PGDN     // Page Down key
+KC.RIGHT         # RGHT     // Right arrow key
+KC.LEFT                     // Left arrow key
+KC.DOWN                     // Down arrow key
+KC.UP                       // Up arrow key
+
+Numpad
+--------
+KC.NUM_LOCK          # NUMLOCK, NLCK            // Num Lock toggle
+KC.KP_SLASH          # NUMPAD_SLASH, PSLS       // Numpad / key
+KC.KP_ASTERISK       # NUMPAD_ASTERISK, PAST    // Numpad * key
+KC.KP_MINUS          # NUMPAD_MINUS, PMNS       // Numpad - key
+KC.KP_PLUS           # NUMPAD_PLUS, PPLS        // Numpad + key
+KC.KP_ENTER          # NUMPAD_ENTER, PENT       // Numpad Enter key
+KC.KP_1              # P1, NUMPAD_1             // Numpad 1 key
+KC.KP_2              # P2, NUMPAD_2             // Numpad 2 key
+KC.KP_3              # P3, NUMPAD_3             // Numpad 3 key
+KC.KP_4              # P4, NUMPAD_4             // Numpad 4 key
+KC.KP_5              # P5, NUMPAD_5             // Numpad 5 key
+KC.KP_6              # P6, NUMPAD_6             // Numpad 6 key
+KC.KP_7              # P7, NUMPAD_7             // Numpad 7 key
+KC.KP_8              # P8, NUMPAD_8             // Numpad 8 key
+KC.KP_9              # P9, NUMPAD_9             // Numpad 9 key
+KC.KP_0              # P0, NUMPAD_0             // Numpad 0 key
+KC.KP_DOT            # PDOT, NUMPAD_DOT         // Numpad . key
+KC.KP_EQUAL          # PEQL, NUMPAD_EQUAL       // Numpad = key
+KC.KP_COMMA          # PCMM, NUMPAD_COMMA       // Numpad , key
+KC.KP_EQUAL_AS400    # NUMPAD_EQUAL_AS400       // Numpad = key (AS400 variant)
+
+Shifted/Symbol Keys
+-------------------
+KC.TILDE                     # TILD, ~       // Tilde key (~)
+KC.EXCLAIM                   # EXLM, !       // Exclamation mark (!)
+KC.AT                        # @             // At symbol (@)
+KC.HASH                      # POUND, #      // Hash/Pound symbol (#)
+KC.DOLLAR                    # DLR, $        // Dollar sign ($)
+KC.PERCENT                   # PERC, %       // Percent sign (%)
+KC.CIRCUMFLEX                # CIRC, ^       // Caret/Circumflex (^)
+KC.AMPERSAND                 # AMPR, &       // Ampersand (&)
+KC.ASTERISK                  # ASTR, *       // Asterisk (*)
+KC.LEFT_PAREN                # LPRN, (       // Left parenthesis
+KC.RIGHT_PAREN               # RPRN, )       // Right parenthesis
+KC.UNDERSCORE                # UNDS, _       // Underscore (_)
+KC.PLUS                      # +             // Plus sign (+)
+KC.LEFT_CURLY_BRACE          # LCBR, {       // Left curly brace ({)
+KC.RIGHT_CURLY_BRACE         # RCBR, }       // Right curly brace (})
+KC.PIPE                      # |             // Pipe character (|)
+KC.COLON                     # COLN, :       // Colon (:)
+KC.DOUBLE_QUOTE              # DQUO, DQT, "  // Double quote (")
+KC.LEFT_ANGLE_BRACKET        # LABK, <       // Less than (<)
+KC.RIGHT_ANGLE_BRACKET       # RABK, >       // Greater than (>)
+KC.QUESTION                  # QUES, ?       // Question mark (?)
+
+International Keys
+------------------
+KC.NONUS_HASH    # NUHS                         // Non-US Hash key
+KC.NONUS_BSLASH  # NUBS                         // Non-US Backslash key
+KC.APP           # APPLICATION, SEL, WINMENU    // Application/Context menu key
+KC.INT1          # RO                           // International 1 (RO key on Japanese keyboards)
+KC.INT2          # KANA                         // International 2 (Kana key on Japanese keyboards)
+KC.INT3          # JYEN                         // International 3 (Yen key on Japanese keyboards)
+KC.INT4          # HENK                         // International 4 (Henkan key on Japanese keyboards)
+KC.INT5          # MHEN                         // International 5 (Muhenkan key on Japanese keyboards)
+KC.INT6                                         // International 6 key
+KC.INT7                                         // International 7 key
+KC.INT8                                         // International 8 key
+KC.INT9                                         // International 9 key
+KC.LANG1         # HAEN                         // Language 1 (Hangul/English on Korean keyboards)
+KC.LANG2         # HAEJ                         // Language 2 (Hanja on Korean keyboards)
+KC.LANG3                                        // Language 3 key
+KC.LANG4                                        // Language 4 key
+KC.LANG5                                        // Language 5 key
+KC.LANG6                                        // Language 6 key
+KC.LANG7                                        // Language 7 key
+KC.LANG8                                        // Language 8 key
+KC.LANG9                                        // Language 9 key
+
+Consumer/Media Keys
+-------------------
+KC.AUDIO_MUTE            # MUTE    // Mute audio output
+KC.AUDIO_VOL_UP          # VOLU    // Increase volume
+KC.AUDIO_VOL_DOWN        # VOLD    // Decrease volume
+KC.MEDIA_NEXT_TRACK      # MNXT    // Next track/song
+KC.MEDIA_PREV_TRACK      # MPRV    // Previous track/song
+KC.MEDIA_STOP            # MSTP    // Stop playback
+KC.MEDIA_PLAY_PAUSE      # MPLY    // Play/Pause toggle
+KC.MEDIA_EJECT           # EJCT    // Eject media
+KC.MEDIA_FAST_FORWARD    # MFFD    // Fast forward
+KC.MEDIA_REWIND          # MRWD    // Rewind
+
+Special/Internal Keys
+---------------------
+KC.NO                             // No key / do nothing
+KC.TRANSPARENT   # TRNS           // Transparent / pass through to lower layer
+KC.RESET                          // Reset the keyboard firmware
+KC.BOOTLOADER                     // Enter bootloader mode for firmware update
+KC.DEBUG         # DBG            // Enable debug mode
+KC.GESC                           // Grave ESC (ESC on tap, ~` on press)
+KC.BKDL                           // Backspace Delete (BSPC on tap, DEL on hold)
+KC.GRAVE_ESC                      // Grave ESC (ESC on tap, ~` on press)
+
+RGB Control Keys
+----------------
+KC.RGB_TOG    // Toggle RGB on/off
+KC.RGB_HUI    // Increase RGB hue
+KC.RGB_HUD    // Decrease RGB hue
+KC.RGB_SAI    // Increase RGB saturation
+KC.RGB_SAD    // Decrease RGB saturation
+KC.RGB_VAI    // Increase RGB value/brightness
+KC.RGB_VAD    // Decrease RGB value/brightness
+KC.RGB_ANI    // Increase RGB animation speed
+KC.RGB_AND    // Decrease RGB animation speed
+KC.RGB_MODE_PLAIN            # RGB_M_P    // Solid color mode
+KC.RGB_MODE_BREATHE          # RGB_M_B    // Breathing animation mode
+KC.RGB_MODE_RAINBOW          # RGB_M_R    // Rainbow mode
+KC.RGB_MODE_BREATHE_RAINBOW  # RGB_M_BR   // Breathing rainbow mode
+KC.RGB_MODE_SWIRL            # RGB_M_S    // Swirl animation mode
+KC.RGB_MODE_KNIGHT           # RGB_M_K    // Knight animation mode
+
+LED Control Keys
+----------------
+KC.LED_TOG    // Toggle LED on/off
+KC.LED_INC    // Increase LED brightness
+KC.LED_DEC    // Decrease LED brightness
+KC.LED_ANI    // Increase LED animation speed
+KC.LED_AND    // Decrease LED animation speed
+KC.LED_MODE_PLAIN   # LED_M_P    // Solid LED color mode
+KC.LED_MODE_BREATHE # LED_M_B    // Breathing LED animation mode
+
+Bluetooth Keys
+--------------
+KC.BT_CLEAR_BONDS # BT_CLR    // Clear all Bluetooth bonds/pairings
+KC.BT_NEXT_CONN   # BT_NXT    // Switch to next Bluetooth connection
+KC.BT_PREV_CONN   # BT_PRV    // Switch to previous Bluetooth connection
+
+Leader Key
+------------
+KC.LEADER         # LEAD    // Activate leader key sequence
+
+Layer Keys (require arguments)
+------------------------------
+KC.MO             # Momentary layer    // Activate layer while held
+KC.DF             # Default layer    // Set default/base layer
+KC.LM             # Layer with modifiers    // Activate layer with modifier keys
+KC.LT             # Layer tap    // Activate layer on hold, tap key on press
+KC.TG             # Toggle layer    // Toggle layer on/off
+KC.TO             # To layer    // Switch to specific layer
+KC.TT             # Tap toggle layer    // Toggle layer on double tap, momentary on hold
+
+Mod Tap
+---------
+KC.MT             # Mod tap    // Hold for modifier, tap for key
+
+Macro & Sequence Commands
+-------------------------
+KC.MACRO_SLEEP_MS # SLEEP_IN_SEQ    // Add delay in milliseconds between keypresses
+KC.send_string("text")    // Type out a string character by character (auto-shifts capitals)
+KC.simple_key_sequence((KC.A, KC.B))    // Execute a sequence of keys in order
+KC.unicode_string_sequence("✨🎉")    // Send Unicode/emoji directly (auto-converts to codepoints)
+KC.unicode_codepoint_sequence(['1f600'])    // Send Unicode by hex codepoint value
+KC.compile_unicode_string_sequences({})    // Pre-compile dictionary of Unicode strings into macros
+KC.generate_leader_dictionary_seq("abc")    // Convert string into key sequences for LEADER key
