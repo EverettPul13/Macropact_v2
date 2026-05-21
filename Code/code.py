@@ -28,7 +28,7 @@ keyboard.diode_orientation = "COL2ROW"
 
 rgb = RGB(
     pixel_pin=board.GP28,
-    num_pixels=29,
+    num_pixels=27,
  )
 
 
@@ -381,7 +381,7 @@ keyboard.keymap = [
     # LAYER 1
     # =====================================================
     [
-        KC.www_BACK, KC.WWW_FORWARD, KC.WWW_REFRESH, KC.WWW_STOP, KC.NO,
+        KC.WWW_BACK, KC.WWW_FORWARD, KC.WWW_REFRESH, KC.WWW_STOP, KC.NO,
         
         KC.SYSTEM_SLEEP,  KC.SYSTEM_WAKE, KC.SYSTEM_POWER, KC.LALT(KC.F4), NEXTLAYER,
 
@@ -402,21 +402,21 @@ keyboard.keymap = [
 
         KC.NO, KC.NO, KC.NO, KC.NO, PREVLAYER,
 
-        KC.NO, KC.NO, KC.NO, KC.TRNS, KC.TRNS,
+        KC.NO, KC.NO, KC.NO, KC.NO, KC.NO,
     ],
 
 
-       # =====================================================
-    # LAYER 3 (CUSTOM TOOLS / FRC / CAD)
+    # =====================================================
+    # LAYER 3 (rohan + cyrus layer// FRC programming + driver macros)
     # =====================================================
     [
-        KC.F1, KC.F2, KC.F3, KC.F4, KC.NO,
+        KC.send_string("10.51.99.12:5801"), KC.LCTL(KC.LALT(KC.B)), KC.LCTL(KC.LALT(KC.D)), KC.LCTL(KC.LALT(KC.G)), KC.NO,
 
-        KC.F5, KC.F6, KC.F7, KC.F8, KC.NO,
+        KC.send_string("10.51.99.11:5801"), KC.send_string("10.51.99.13:5801"), KC.F7, KC.F8, NEXTLAYER,
 
-        KC.F9, KC.F10, KC.F11, KC.F12, KC.NO,
+        KC.LCTL(KC.LALT(KC.E)), KC.LCTL(KC.LALT(KC.T)), KC.LCTL(KC.LALT(KC.A)), KC.LCTL(KC.LALT(KC.S)), PREVLAYER,
 
-        KC.LCTL(KC.S), KC.LCTL(KC.Z), KC.LCTL(KC.Y), KC.TRNS, KC.TRNS,
+        KC.LCTL(KC.LALT(KC.D)), KC.LCTL(KC.LALT(KC.Q)), KC.LCTL(KC.LALT(KC.P)), KC.LCTL(KC.LALT(KC.M)), KC.TRNS,
     ],
 ]
 
@@ -439,5 +439,6 @@ if __name__ == '__main__':
     #   - scans encoders
     #   - updates RGB
     #   - handles USB HID
+    # prints a message to ensure the code actually works and runs
     print("STARTED")
     keyboard.go()
